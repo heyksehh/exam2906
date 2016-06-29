@@ -8,7 +8,7 @@ def readfile ():
     return f
 
 def lookfornames (f):
-    regex = ' ([А-Я]\. [А-Я][а-я]+)'
+    regex = ' ([А-Я]\. *[А-Я][а-я]+)'
     for line in f:
         res = re.findall (regex, line)
         for elem in res:
