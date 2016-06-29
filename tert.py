@@ -15,8 +15,8 @@ def lookfornames (f):
             print (elem)
 
 def lookagain (f):
-    regex2 = '[А-Я]\. [А-Я]\. [А-Я][а-я]+'
-    regex3 = '[А-Я][а-я]+ [А-Я][а-я]+'
+    regex2 = '[А-Я]\. [А-Я]\. [А-Я][а-я]+\-*[А-Я]*[а-я]*'
+    regex3 = '[А-Я][а-я]+ [А-Я][а-я]+\-*[А-Я]*[а-я]*'
     for line in f:
         res2 = re.findall (regex2, line)
         res3 = re.findall (regex3, line)
